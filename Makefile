@@ -2,6 +2,8 @@
 
 clean:
 	rm -f output/*
+	rm -f stipends_cleaned.csv
+	rm -f Report.html
 
 stipends_cleaned.csv: stipends.csv Project_Skeleton.R
 	Rscript Project_Skeleton.R
