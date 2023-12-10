@@ -1,0 +1,66 @@
+---
+title: "Analysis of Self-reported PhD Stipends"
+author: "Yishu Zhang"
+date: "2023-12-10"
+output: html_document
+---
+
+## Introduction
+
+PhD stipends represent a critical element of financial support for graduate students pursuing doctoral degrees in various academic fields. These stipends typically cover tuition costs and provide a living allowance, allowing students to focus on their studies and research without the financial burden of student loans or part-time work. The amount of stipend support can vary significantly based on factors such as the university, department, location, and funding sources, leading to a diverse landscape of financial opportunities for aspiring scholars. Understanding the dynamics of PhD stipends is essential for prospective students, universities, and policymakers as they navigate the complex intersection of education, finance, and academic career development. In this analysis, I draw from self-reported PhD salaries sourced from phdstipends.com and made available on https://www.kaggle.com/datasets/paultimothymooney/phd-stipends. This dataset provides valuable insights into the financial support received by doctoral students. By analyzing this data, we aim to make basic summaries that shed light on stipend trends, disparities, and variations across different institutions and academic fields. Understanding the dynamics of PhD stipends is essential for prospective students, universities, and policymakers as they navigate the complex intersection of education, finance, and academic career development.
+
+## Objectives
+
+1. Compare average PhD stipend levels between different academic departments to understand potential variations in financial support.
+2. Analyze the trend in PhD stipend amounts over multiple years to provide insights into whether stipends are increasing, decreasing, or remaining stable.
+3. Identify and rank the top ten universities offering the most generous stipends to PhD students, aiding prospective candidates in their university selection.
+4. Highlight and rank the top ten universities with the lowest PhD stipend levels, potentially indicating areas for improvement in financial support for doctoral students.
+
+## Results and Conclusions
+
+1. Overall Pay by Department
+
+```{r}
+knitr::include_graphics("~/work/output/Overall_Pay_by_Department.png")
+```
+
+The bar chart titled "Overall Pay by Department" provides a comparative view of average PhD stipends across various academic disciplines, with a key caveat: the data only includes departments where at least 100 self-reported stipends have been accounted for, ensuring a robust data set. The science-related fields tend to offer higher stipends, with departments such as 'biomed,' 'neuroscience,' and 'biology' appearing at the top. In contrast, departments traditionally associated with the arts, like 'english' and 'communication,' are shown at the lower end of the stipend spectrum, underscoring the financial disparities between different academic disciplines during doctoral studies.
+
+2. Average Overall Pay by Year
+
+```{r}
+knitr::include_graphics("~/work/output/Overall_Pay_across_Years.png")
+```
+
+The figure presents a line graph titled "Average Overall Pay by Year," charting the trajectory of average PhD stipends from 2015 through 2022. The y-axis indicates the stipend amounts in dollars, ranging from $24,000 to $29,000, while the x-axis enumerates the years. There's a noticeable dip in 2016 when stipends fell below the 2015 starting figure, but from 2017 onwards, there's a steady recovery and growth. The graph shows a marked increase between 2020 and 2021, and by 2022, the average PhD stipend has reached its zenith over the depicted timeline.
+
+3. Top Ten Universities with Highest Stipends
+
+```{r}
+knitr::include_graphics("~/work/output/top_10_stipend_University.png")
+```
+
+This figure presents a horizontal bar chart titled "Top 10 Universities by Average PhD Stipend." Notably, the universities are arranged, with Stanford University, a private institution, positioned at the top. This suggests that Stanford University, among these top-ranking universities, offers the highest average PhD stipend and is typically a private school.
+
+4. Top Ten Universities with Lowest Stipends
+
+```{r}
+knitr::include_graphics("~/work/output/bottom_10_stipend_University.png")
+```
+
+In contrast, this figure showcases another horizontal bar chart titled "Top 10 Universities with the Lowest Average PhD Stipend." This arrangement indicates that Bowling Green State University, primarily a public institution, offers the lowest average PhD stipend among these listed universities, which are generally public schools.
+
+## Summary
+
+The analysis of PhD stipends by academic departments reveals significant financial disparities, with science-related fields generally offering higher stipends than arts-associated departments. Over time, a noticeable dip in stipends in 2016 was followed by a consistent recovery and growth trend, culminating in the highest average PhD stipend by 2022. Private institutions like Stanford University ranked at the top in stipend offerings, while public institutions, including Bowling Green State University, provided the lowest stipends among the listed universities. These findings underscore the importance of addressing financial disparities within doctoral education, and further investigation into the factors behind stipend fluctuations, the role of institutional type, and policy implications for equitable financial support is warranted. 
+
+## Future Questions
+
+1. Do STEM Programs Offer Higher Stipends Than Non-STEM Programs?
+To explore potential disparities in stipend levels, is there evidence to suggest that STEM (Science, Technology, Engineering, and Mathematics) programs tend to provide greater financial support compared to non-STEM programs?
+
+2. Do Private Schools Offer Higher Stipends Than Public Schools, and by How Much?
+To assess the impact of institutional type on stipend amounts, is there a consistent pattern indicating that private schools typically offer higher PhD stipends than public institutions, and if so, what is the extent of this difference in stipend amounts?
+
+3. Was the Dip in 2015-2016 in Stipend Levels Related to Economic Conditions?
+To understand the factors contributing to the decline in stipend amounts during 2015-2016, was this dip influenced by economic circumstances or other external factors that may have affected the financial landscape of PhD stipends during that period?
